@@ -6,7 +6,7 @@ import os
 dir = os.path.dirname(__file__)
 
 
-class imoji:
+class imojify:
     def __init__(self):
         self.uni_code_dirc = unicode_to_dirc
         self.name_dirc = name_to_dirc
