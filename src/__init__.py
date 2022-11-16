@@ -1,3 +1,3 @@
-from imoji.imoji import imoji
+from imojify.imojify import imojify
 
-imoji=imoji()
+imojify=imojify()
