@@ -1,13 +1,13 @@
-# IMOJI
+# IMOJIFY
 
 a python library that maps almost every emoji to its color image
 it's used to get visual representation of emoji unicode
 
-imoji can be used to solve the problem of plotting emojis as labels in python plotting libraries
+imojify can be used to solve the problem of plotting emojis as labels in python plotting libraries
 
 ## Installation
 
-    `pip install imoji`
+    `pip install imojify`
 
 ## Quickstart
 
@@ -15,8 +15,8 @@ imoji can be used to solve the problem of plotting emojis as labels in python pl
 
 ```python
 from PIL import Image
-from imoji import imoji
-Image.open(imoji.get_img_path('😂'))
+from imojify import imojify
+Image.open(imojify.get_img_path('😂'))
 ```
 
 ![](media/emoji.png)
@@ -25,8 +25,8 @@ multiple emoji is also supported
 
 ```python
 from PIL import Image
-from imoji import imoji
-Image.open(imoji.get_img_path('😂😂😂😂'))
+from imojify import imojify
+Image.open(imojify.get_img_path('😂😂😂😂'))
 ```
 
 ![](media/Mulit_emoji.png)
@@ -34,11 +34,11 @@ Image.open(imoji.get_img_path('😂😂😂😂'))
 ### Plotting emojis in matplotlib
 
 ```python
-from imoji import imoji
+from imojify import imojify
 from matplotlib import pyplot as plt 
 from matplotlib.offsetbox import OffsetImage,AnnotationBbox
 def offset_image(cords, emoji, ax):
-    img = plt.imread(imoji.get_img_path(emoji))
+    img = plt.imread(imojify.get_img_path(emoji))
     im = OffsetImage(img, zoom=0.08)
     im.image.axes = ax
     ab = AnnotationBbox(im, (cords[0], cords[1]),  frameon=False, pad=0)
