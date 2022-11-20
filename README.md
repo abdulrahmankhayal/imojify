@@ -1,7 +1,7 @@
 # IMOJIFY
 
 a python library that maps almost every emoji to its color image
-it's used to get visual representation of emoji unicode
+, it's used to get visual representation of emoji unicode
 
 imojify can be used to solve the problem of plotting emojis as labels in python plotting libraries
 
